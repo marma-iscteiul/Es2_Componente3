@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<header><title>Table</title></header>
+<body>
+	
+<script>
+
+var table = '';
+var rows = 10;
+var clms = 5;
+
+	table += '<th>' + 'File timestamp' + '</th>';
+	table += '<th>' + 'File name' + '</th>';
+	table += '<th>' + 'File tag' + '</th>';
+	table += '<th>' + 'Tag Description' + '</th>';
+	table += '<th>' + 'Spread Visualization' + '</th>';
+	
+	for (var i = 0; i < rows; i++) {
+		table += '<tr>';
+		for (var a = 1; a < clms; a++) {
+			if(a=1)
+			table += '<td>' + '<time>12:00</time>' + '</td>';
+			if(a=2)
+			table += '<td>' + 'covid19spreading.rdf' + '</td>';
+			if(a=3)
+			table += '<td>' + 'NovoSorto' + '</td>';
+			if(a=4)
+			table += '<td>' + 'Detetado novo sorto' + '</td>';
+			if(a=5)
+			table += '<td>' + '<a href="http://visualdataweb.de/webvowl/#iri=https://github.com/vbasto-iscte/ESII1920/raw/master/covid19spreading.rdf">covid19spreading</a></span>' + '</td>';
+		}
+		table += '</tr>';
+	}
+
+document.write('<table border=1>' + table + '</table>')
+</script>
+	
+</body>
+</html>
